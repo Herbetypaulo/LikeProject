@@ -26,8 +26,8 @@ A working Pyramid project that uses Mongo for the database. I should be able to 
 * Run the migrations.
 
 ```
-git clone https://github.com/Herbetypaulo/NewProject.git
-cd NewProject
+git clone https://github.com/Herbetypaulo/LikeProject.git
+cd LikeProject
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
