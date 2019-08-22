@@ -4,9 +4,9 @@
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="jumbotron">
     <div class="container">
-      <h1>Welcome!</h1>
-      <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-      <p>
+     <h1>Hello be without coming</h1>
+      <h3>Leave your like on your favorite theme, or add your favorite video.</h3>
+      <br>
         <a href="{% url 'core:video_add' %}">
           <button class="btn btn-primary btn-lg" type="button">
           Add Video &raquo;
@@ -52,6 +52,7 @@
 
   $('.likeCount').on('click', function () {
     var likeId = $(this).data('id')
+    like = $("#like_" + likeId).text()
     like++
     $("#like_" + likeId).html(like)
 
@@ -70,6 +71,7 @@
 
   $('.unlikeCount').on('click', function () {
     var unlikeId = $(this).data('id')
+    unlike = $("#unlike_" + unlikeId).text()
     unlike++
     $("#unlike_" + unlikeId).html(unlike)
 
@@ -85,6 +87,7 @@
       }
     })
   });
+
 
 </script>
 
